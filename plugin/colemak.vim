@@ -124,8 +124,13 @@ endfunction
 
 " --- Toggle key binding ---
 " Map the toggle function to <leader>\ in all modes.
+" nnoremap <silent> <leader>\ :call ColemakToggleMappings()<CR>
+" vnoremap <silent> <leader>\ <Esc>:call ColemakToggleMappings()<CR>
+" ounoremap <silent> <leader>\ <Esc>:call ColemakToggleMappings()<CR>
+" inoremap <silent> <leader>\ <Esc>:call ColemakToggleMappings()<CR>
+
+" Map the toggle function to <leader>\ in all modes.
 nnoremap <silent> <leader>\ :call ColemakToggleMappings()<CR>
 vnoremap <silent> <leader>\ <Esc>:call ColemakToggleMappings()<CR>
-ounoremap <silent> <leader>\ <Esc>:call ColemakToggleMappings()<CR>
+onoremap <silent> <leader>\ <Esc>:call ColemakToggleMappings()<CR>
 inoremap <silent> <leader>\ <Esc>:call ColemakToggleMappings()<CR>
-
